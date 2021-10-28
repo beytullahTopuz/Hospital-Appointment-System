@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.t4zb.hospital_appointment_system.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homePagePationFragment"
+            app:destination="@id/homePagePationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homePageDoctorFragment"
+            app:destination="@id/homePageDoctorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.t4zb.hospital_appointment_system.ui.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_homePagePationFragment"
+            app:destination="@id/homePagePationFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_homePageDoctorFragment"
+            app:destination="@id/homePageDoctorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.t4zb.hospital_appointment_system.ui.fragment.AppointmentFragment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_homePagePationFragment"
+            app:destination="@id/homePagePationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePagePationFragment"
+        android:name="com.t4zb.hospital_appointment_system.ui.fragment.HomePagePationFragment"
+        android:label="fragment_home_page_pation"
+        tools:layout="@layout/fragment_home_page_pation" >
+        <action
+            android:id="@+id/action_homePagePationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homePagePationFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageDoctorFragment"
+        android:name="com.t4zb.hospital_appointment_system.ui.fragment.HomePageDoctorFragment"
+        android:label="fragment_home_page_doctor"
+        tools:layout="@layout/fragment_home_page_doctor" >
+        <action
+            android:id="@+id/action_homePageDoctorFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homePageDoctorFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+</navigation>

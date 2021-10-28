@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "564454701510",
+    "firebase_url": "https://valendemoproject-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "valendemoproject",
+    "storage_bucket": "valendemoproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564454701510:android:0dce7c3a917df943c69ac7",
+        "android_client_info": {
+          "package_name": "com.t4zb.hospital_appointment_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564454701510-6vhmbinad1qne8turu0e7rdtf1tt0mu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0u_ephwhjzGUbnjj0Vi7y7W2wuV3D0cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564454701510-6vhmbinad1qne8turu0e7rdtf1tt0mu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
